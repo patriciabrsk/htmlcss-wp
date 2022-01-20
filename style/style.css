@@ -17,16 +17,21 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    margin-top: 20px;
+}
+
+footer{
+    height: 80px;
+    text-align: center;
+}
+
 .container{
     width:80%;
     margin: 0 auto;
-    min-width: 800px;
+    min-width: 850px;
     max-width: 600px;
     /* margin-bottom: 20px; */
-}
-
-header{
-    margin-top: 20px;
 }
 
 .logo{
@@ -36,7 +41,8 @@ header{
 .vl:after{
     content: "";
     float: left;
-    left: 348px;
+    left: 308px;
+    position: absolute;
     top: 0;
     border-left: 1px solid lightgrey;
     height: 63.48px;
@@ -61,11 +67,6 @@ ul{
     width: 10%;
 }
 
-footer{
-    height: 80px;
-    text-align: center;
-}
-
 /* .header{
     width: 80%;
     height: 120px;
@@ -73,16 +74,25 @@ footer{
     margin: 0 auto;
 } */
 
-section#jumbotron {
-    border-radius: 25px;
+div#jumbotron {
+    border-radius: 7px;
     position: relative;
+    overflow: hidden;
+    width: 850px;
+    /* height: 410px; */
 }
 
 img.jumbotron{
-    opacity: grey;
+    /* opacity: grey; */
+    /* display: cover; */
+    /* width: 850px; */
+
+    max-width: 100%;
+    max-height: 100%;
 }
 
-h3{
+
+div.text-jumbo{
     color:white;
     font-weight: normal;
     position: absolute;
