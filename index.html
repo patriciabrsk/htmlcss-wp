@@ -13,11 +13,13 @@
     <header class="container">
         <!-- Logo Neori -->
         <img class="logo" src="img/logo.png" alt="Logo Neori" class="logo-neori">
-            <span class="vl"></span>
+            <div class="vl"></div>
+
+
         <!-- Navbar links -->
-        <section id="nav-links">
+        <!-- <section id="nav-links" class="container"> -->
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li>
                         <a href="#" class="nav-item">FEATURES</a>
                     </li>
@@ -38,32 +40,35 @@
                     </li>
                 </ul>
             </nav>
-        </section>
-
+        <!-- </section> -->
+    </header>
         <!-- Jumbotron -->
-        <div id="jumbotron">
+        <div id="jumbotron" class="container">
             <img class="jumbotron" src="img/banner.jpg" alt="Meditation image">
-            
-            <div class="text-jumbo">
+
                 <h3 class="text-jumbo">
                     Pretium ac placerat dui interdum nunc in eros urna morbi
                 </h3>
-                <span class="text-jumbo lorem-jumbotron">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo nobis, cumque libero magnam magni minima non sed voluptatibus iste quos eligendi tempora a deleniti provident quibusdam culpa sunt. Assumenda.</span>
-            <p></p>
-            </div>
-
+                <span class="text-jumbo lorem-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo nobis, cumque libero magnam magni minima non sed...</span>
         </div>
-    </header>
 
     <!-- Central content -->
     <main class="container">
-        <section class="content clearfix">
-            <div class="central-section">
-                <div class="internal-header"></div>
-                <div id="col-left" class="column"></div>
-                <div id="col-center" class="column"></div>
-                <div id="col-right" class="column"></div>
-            </div>
+        <section id="content" class="clearfix">
+
+            <header class="internal-header">
+                <h1>Leadership</h1>
+                <span class="lorem-text">Fertenum urna a libero tempus</span>
+            </header>
+
+            <aside id="col-left">
+                <div class="img-wrapper">
+                    <img class="img-left" src="img/img-1.jpg" alt="Plant image">
+                </div>
+            </aside>
+            <article id="col-center"></article>
+            <aside id="col-right"></aside>
+
         </section>
 
         <!-- Footer -->

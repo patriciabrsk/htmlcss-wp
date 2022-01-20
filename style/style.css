@@ -19,53 +19,84 @@ body{
 
 header{
     margin-top: 20px;
+    /* height: 100px; */
 }
 
 footer{
-    height: 80px;
+    height: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
 .container{
-    width:80%;
+    width: 80%;
     margin: 0 auto;
-    min-width: 850px;
+    min-width: 900px;
     max-width: 600px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 .logo{
     width: 150px;
+    float: left;
+    cursor: pointer;
 }
 
-.vl:after{
-    content: "";
+.vl{
+    float: left;
+    margin-left: 15px;
+    border-left: 1px solid lightgrey;
+    height: 63.48px;
+}
+
+/* .vl:after{
     float: left;
     left: 308px;
     position: absolute;
     top: 0;
     border-left: 1px solid lightgrey;
     height: 63.48px;
+} */
+
+.nav-links{ 
+   list-style: none;
 }
 
-section#nav-links{
-    height: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    /* margin: 1rem 0; */
+.nav-links li{
+    display: inline-block;
+
 }
 
-ul{
-    list-style-type: none;
+.nav-links ul{
+
 }
 
-.nav-item{
+.nav-links{
+    width: 20px;
+    padding: 10px 0;
+}
+
+.nav-links a{
     text-decoration: none;
     color: lightgrey;
     font-size: 12px;
-    float: left;
-    width: 10%;
+    display: block;
+    padding: 10px 5px;
 }
+
+.nav-links a:hover{
+    color: black;
+}
+
+
+/* .nav-item{
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 12px;
+    /* float: inline-start; */
+    /* width: 10%;
+    margin: 30px 1rem 20px; */
+} */
 
 /* .header{
     width: 80%;
@@ -74,11 +105,11 @@ ul{
     margin: 0 auto;
 } */
 
-div#jumbotron {
+div#jumbotron .container{
     border-radius: 7px;
     position: relative;
     overflow: hidden;
-    width: 850px;
+    /* width: 850px; */
     /* height: 410px; */
 }
 
@@ -91,33 +122,79 @@ img.jumbotron{
     max-height: 100%;
 }
 
-
-div.text-jumbo{
+.text-jumbo{
     color:white;
     font-weight: normal;
     position: absolute;
-    left: 50px;
-    bottom: 100px;
+    width: 340px;
+    left: 60px;
+    bottom: 20px;
 }
 
-.central-section{
-    background-color: #0086ff;
-    width: 100%;
-    height: 400px;
-    z-index: 0;
+span.lorem-text{
+    font-size: 12px;
 }
 
-.internal-header{
-    background-color: #abcfe6;
+header.internal-header{
+    /* background-color: #abcfe6; */
     margin-bottom: 15px;
     height: 70px;
 }
 
-.column{
+section#content{
+    background-color: #0086ff;
+}
+
+section#content > header{
+    height: 50px;
+}
+
+section#content aside,
+section#content article{
+    height: 300px;
+    margin: 1rem 0;
+    float: left;
+    background-color: #abcfe6;
+}
+
+section#content aside{
+    width: 20%;
+
+}
+section#content article{
+    width: calc(60% - 2rem);
+    margin: 1rem 0;
+}
+
+/* aside#col-left .img-left{
+    width: 180px;
+} */
+
+aside#col-left .img-wrapper{
+    width: 100%;
+    height: 20%;
+    background-color: #abcfe6;
+}
+
+aside#col-left{
+    margin-right: 10px;
+}
+
+article#col-center{
+    background-color: #abcfe6;
+}
+
+/* .column{
     float: left;
     width: 15%;
     height: 300px;
-    background-color: #abcfe6;
+
+}
+
+.img-left{ 
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
 }
 
 #col-center{
@@ -127,7 +204,7 @@ div.text-jumbo{
 
 #col-right{
     float: right;
-}
+} */
 
 span.heart{
     color:red;
